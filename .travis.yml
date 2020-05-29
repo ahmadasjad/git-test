@@ -9,5 +9,6 @@ git:
     submodules: false #don't bother git to check for submodule, if there is no submodule
 
 script:
+    - composer install
     - echo "Hello World"
     - echo "Testing Build with custom script"
