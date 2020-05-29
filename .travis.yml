@@ -5,3 +5,9 @@ php:
     - '7.3'
     - '7.4'
 
+git:
+    submodules: false #don't bother git to check for submodule, if there is no submodule
+
+script:
+    - echo "Hello World"
+    - echo "Testing Build with custom script"
