@@ -1,0 +1,14 @@
+{
+    "name": "ahmadasjad/git-test",
+    "description": "Hello World App to test the git functionality",
+    "type": "project",
+    "require": {
+        "phpunit/phpunit": "^9.1"
+    },
+    "authors": [
+        {
+            "name": "Ahmad Asjad",
+            "email": "ahmadcimage@gmail.com"
+        }
+    ]
+}
