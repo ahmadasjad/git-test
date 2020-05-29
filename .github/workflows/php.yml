@@ -35,6 +35,14 @@ jobs:
 
     # - name: Run test suite
     #   run: composer run-script test
-    
-    - name: Check with phpinsights
-      run: ./vendor/bin/phpinsights
+
+  phpinsights:
+    runs-on: ubuntu-latest
+    name: PHP Insights checks
+    steps:
+        - uses: actions/checkout@v2
+        - uses: shivammathur/setup-php@v1
+          with:
+              php-version: 7.4
+        - run: composer install --prefer-dist --no-progress --no-suggest
+        - run: vendor/bin/phpinsights -n --ansi --format=github-action
