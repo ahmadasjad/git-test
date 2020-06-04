@@ -41,6 +41,8 @@ jobs:
     name: PHP Insights checks
     steps:
         - uses: actions/checkout@v2
+          with:
+            fetch-depth: 0
         - uses: shivammathur/setup-php@v1
           with:
               php-version: 7.4
