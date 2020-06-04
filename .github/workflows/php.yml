@@ -52,5 +52,6 @@ jobs:
         - run: echo ${{ github.ref }}
         - run: echo ${{ github.head_ref }}
         - run: echo ${{ github.base_ref }}
-        - run: git log
+        - run: git branch
+        - run: git branch --remote
         - run: git diff ${{ github.base_ref }}...${{ github.head_ref }}
